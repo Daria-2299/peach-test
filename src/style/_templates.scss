@@ -1,0 +1,52 @@
+@use "vars";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin basic-text-style {
+  font-family: vars.$font-family;
+  font-weight: 600;
+  color: vars.$text-color;
+}
+
+@mixin light-text-style {
+  font-family: vars.$font-family;
+  font-weight: 400;
+  color: vars.$text-color;
+}
+
+@mixin title-style {
+  font-family: vars.$font-family;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 100%;
+  color: vars.$text-color;
+}
+
+@mixin addition-text-style {
+  font-family: vars.$second-family;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 111%;
+  color: vars.$text-color;
+  @media (max-width: vars.$mobile) {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+  }
+}
+
+@mixin animation-params {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+@mixin image-style {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

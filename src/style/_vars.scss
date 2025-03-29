@@ -1,0 +1,28 @@
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-condensed");
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Proxima Nova/ProximaNova-Regular.woff") format("woff2"),
+    url("../fonts/Proxima Nova/ProximaNova-Regular.ttf") format("truetype"),
+    url("../fonts/Proxima Nova/ProximaNova-Regular.eot") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+$font-family: "Proxima Nova Condensed", sans-serif;
+$second-family: "Proxima Nova", sans-serif;
+$third-family: "Arial", sans-serif;
+
+$text-color: #444444;
+$title-color: #b01736;
+$accent-color: #a30c33;
+$light-color: #ffffff;
+$bg-accent: #cb0f41;
+$bg-color: #f0f0f0;
+$bg-light: rgb(0, 0, 0, 0.1);
+$border-color: #d9d9d9;
+$shadow-color: rgba(0, 0, 0, 0.06);
+$filter-color: rgb(45, 54, 83, 0.6);
+
+$desktop-md: 1250px;
+$mobile: 767px;
+$mobile-sm: 390px;
